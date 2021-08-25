@@ -1,0 +1,1 @@
+#define __BL_KILL_BAR__

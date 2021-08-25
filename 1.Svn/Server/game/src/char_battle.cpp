@@ -15,7 +15,7 @@
 			strlcpy(kb.szVictim, GetName(), sizeof(kb.szVictim));
 
 			const DESC_MANAGER::DESC_SET& c_set_desc = DESC_MANAGER::instance().GetClientSet();
-			for (auto it = c_set_desc.begin(); it != c_set_desc.end(); ++it)
+			for (DESC_MANAGER::DESC_SET::const_iterator it = c_set_desc.begin(); it != c_set_desc.end(); ++it)
 			{
 				LPDESC d_c = *it;
 				if (!d_c)

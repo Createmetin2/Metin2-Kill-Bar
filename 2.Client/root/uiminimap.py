@@ -85,7 +85,6 @@ if app.BL_KILL_BAR:
 			KillDict["ThinBoard"] = TBoard
 			KillDict["TextLine"] = KillText
 			KillDict["CoolTime"] = app.GetTime() + MiniMap.KILL_BAR_COOLTIME
-			KillDict["DELETE"] = False
 			KillDict["MOVE_X"] = MiniMap.KILL_BAR_MOVE_DISTANCE
 			KillDict["MOVE_Y"] = 0.0
 

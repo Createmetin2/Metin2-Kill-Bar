@@ -6,10 +6,10 @@
 			TPacketGCKillBar kb;
 			
 			kb.bHeader = HEADER_GC_KILLBAR;
-			kb.bKillerRace = pkKiller->GetRaceNum();
+			kb.bKillerRace = static_cast<BYTE>(pkKiller->GetRaceNum());
 			LPITEM KillerWeapon = pkKiller->GetWear(WEAR_WEAPON);
 			kb.bKillerWeaponType = KillerWeapon ? KillerWeapon->GetSubType() : 255;
-			kb.bVictimRace = GetRaceNum();
+			kb.bVictimRace = static_cast<BYTE>(GetRaceNum());
 
 			strlcpy(kb.szKiller, pkKiller->GetName(), sizeof(kb.szKiller));
 			strlcpy(kb.szVictim, GetName(), sizeof(kb.szVictim));
